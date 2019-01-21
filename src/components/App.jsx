@@ -50,7 +50,7 @@ class App extends React.Component {
         <div>
           <h2>Server Response: {this.state.response}</h2>
         </div>
-        <form onChange={this.handleSubmit.bind(this)}>
+        <form onSubmit={this.handleSubmit.bind(this)}>
           <label>Name:
             <input type='text' value={this.state.name} onChange={this.handleName.bind(this)}></input>
           </label>
